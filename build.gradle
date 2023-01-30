@@ -43,3 +43,13 @@ test {
 	useJUnitPlatform()
 }
 
+//jar {
+//	manifest {
+//		attributes('Main-Class': 'org.lamp.springboot.tutorial.LampNotebookApplication')
+//	}
+//}
+
+bootBuildImage{
+	builder='paketobuildpacks/builder:base'
+	imageName='eanybing/lamp-notebook-x'
+}
