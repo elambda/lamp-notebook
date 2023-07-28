@@ -7,7 +7,8 @@ public class SqlConjunctionMain {
 	public static void main(String[] args) {
 		StringBuffer columns = new StringBuffer();
 
-		Stream.of("ID", "NAME", "AGE").forEach(item -> columns.append(item).append(","));
+		Stream.of("ID", "NAME", "AGE")
+				.forEach(item -> columns.append(item).append(","));
 
 		StringBuffer updatedColumns = columns.deleteCharAt(columns.length() - 1);
 
